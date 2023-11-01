@@ -232,7 +232,7 @@ class MainActivity : ComponentActivity() {
                                             Triple(
                                                 Point(r, c),
                                                 Point(lastFlip!!.first, lastFlip!!.second),
-                                                lastFlipTime!!
+                                                System.currentTimeMillis()-lastFlipTime!!
                                             ) to true
                                         )
                                         if (oks.size == rows * cols) {
@@ -251,7 +251,7 @@ class MainActivity : ComponentActivity() {
                                             Triple(
                                                 Point(r, c),
                                                 Point(lastFlip!!.first, lastFlip!!.second),
-                                                lastFlipTime!!
+                                                System.currentTimeMillis()-lastFlipTime!!
                                             ) to false
                                         )
                                         errors.add(lastFlip!!.hashCode())
